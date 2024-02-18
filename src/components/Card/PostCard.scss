@@ -1,0 +1,34 @@
+@import "../../../src/utilities/_variables.scss";
+
+.parent--positioned {
+  position: relative;
+}
+
+.p-card {
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 transparentize($dark-color, 0.8);
+  height: 100%;
+
+  &.highlight--cloud-and-server {
+    border-top: 3px solid $burgundy-color;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted $light-grey-color;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__content-text {
+    font-style: italic;
+  }
+
+  &__footer {
+    padding-top: 10px;
+    border-top: 1px dotted $light-grey-color;
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+  }
+}
